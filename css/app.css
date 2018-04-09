@@ -1,0 +1,271 @@
+
+#app{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  opacity: 0;
+  transition: opacity .5s ease;
+  overflow: hidden;
+}
+
+
+/*### MAP ###*/
+
+#map{
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+}
+
+
+/*### DETAILS ###*/
+
+#details-container{
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  bottom: -100%;
+  z-index: 1;
+  transition: all .5s ease;
+}
+
+#details{
+  position: relative;
+  height: 100%;
+  width: 100%;
+  background-image: url('../img/map/details-bg.jpg');
+  background-size: cover;
+  background-position: center;
+  color: white;
+}
+
+
+/*** CONTENU DETAILS ***/
+
+#details .details-content{
+  background-color: rgba(255, 255, 255, 0.89);
+  height: 100%;
+  width: 100%;
+  color: dimgray;
+  position: absolute;
+  border-left: 1px solid white;
+  padding-top: 30px
+}
+
+#details .details-content h2{
+  margin: 5px;
+  text-align: center;
+  font-size: 1.2rem;
+}
+
+#details .details-content .status{
+  text-align: center;
+  color: white;
+  font-size: 1.3rem;
+  margin: 5px 0 0 0;
+}
+
+#details .details-content .status-open{
+  background-color: rgba(137, 190, 73, 0.5);
+}
+
+#details .details-content .status-closed{
+  background-color: rgba(247, 76, 76, 0.5);
+}
+
+#details .details-content .status-booked{
+  background-color: rgba(126, 11, 128, 0.5);
+}
+
+#details .details-content table{
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 1em 0.4em;
+  background-color: rgba(190, 190, 190, 0.5);
+  font-size: 0.80rem;
+}
+
+#details .details-content table tr{
+  padding-bottom: 15px;
+}
+
+#details .details-content table td.title{
+  min-width: 140px;
+  font-weight: bold;
+  font-size: 0.80rem;
+}
+
+#details .details-content #book{
+  width: 250px;
+  height: 45px;
+  background-color: white;
+  border: 1px solid lightgray;
+  border-radius: 3px;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 1rem;
+  display: block;
+  margin: 20px auto;
+  cursor: pointer;
+  transition: all 0.5s ease;
+  }
+
+#details .details-content #book:hover{
+  color: white;
+  background-color: lightgray;
+  border: 1px solid white;
+}
+
+#details .details-content .help-text{
+  text-align: center;
+  font-style: italic;
+}
+
+
+/*### BOOKING FOOTER ###*/
+
+#booking{
+  position: absolute;
+  top: -40px;
+  width: 100%;
+  background-color: rgba(50, 50, 50, 0.8);
+  color: white;
+  text-align: center;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 0.79em;
+}
+
+/*### BOUTON MOBILE ###*/
+
+#mobile-details-show, #mobile-details-hide{
+  background-color: rgba(50, 50, 50, 0.5);
+  width: 50px;
+  height: 25px;
+  color: white;
+  display: inline-block;
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+}
+
+#mobile-details-show{
+  border-radius: 50px 50px 0px 0px;
+  top: -64px;
+}
+
+#mobile-details-hide{
+  border-radius: 0px 0px 50px 50px;
+  top: 0;
+}
+
+.details-visible{
+  bottom: 0% !important;
+}
+
+/*### BOUTON TUTORIEL ###*/
+
+#go-to-tutorial{
+  position: fixed;
+  background-color: rgba(100%, 65%, 0%, 0.95);
+  left: 50%;
+  top: 0;
+  padding: 0 50px;
+  border-radius: 0px 0px 100px 100px;
+  cursor: pointer;
+  opacity: 0.8;
+  transition: all .5s ease;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+  padding: 10px 30px;
+}
+
+#go-to-tutorial:hover{
+  opacity: 1;
+}
+
+#go-to-tutorial p{
+  color: white;
+  font-weight: bold;
+  margin: 0 auto;
+}
+
+
+
+
+/*#### MEDIAQUARIES ####*/
+
+@media only screen and (min-width: 768px) and (orientation: landscape){
+
+  /*### MAP ###*/
+
+  #map{
+    width: 60%;
+    float: left;
+  }
+
+  /*### DETAILS ###*/
+
+  #details-container{
+    height: 100%;
+    width: 40%;
+    position: relative;
+    float: right;
+    bottom: 0;
+  }
+
+
+  /*** CONTENU DETAILS ***/
+
+  #details .details-content{
+    padding-top: 0
+  }
+
+  #details .details-content h2{
+    margin: 20px;
+    font-size: 1.5rem;
+  }
+
+  #details .details-content .status{
+    font-size: 2rem;
+    margin: 32px 0;
+  }
+
+  #details .details-content table{
+    font-size: 1rem;
+    border-spacing: 1em 1em;
+  }
+
+  #details .details-content table td.title{
+    min-width: 170px;
+    font-size: 1rem;
+  }
+
+  #details .details-content #book{
+    margin: 50px auto;
+  }
+
+  /*### BOOKING FOOTER ###*/
+
+  #booking{
+    position: relative;
+    bottom: 0;
+    font-size: 1em;
+  }
+
+  #mobile-details-show, #mobile-details-hide{
+    display: none;
+  }
+
+  /*### BOUTON TUTORIEL ###*/
+
+  #go-to-tutorial{
+    left: 30%;
+    padding: 10px 50px;
+  }
+
+}

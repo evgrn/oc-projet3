@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+
+<html prefix="og: http://ogp.me/ns#">
+  <head>
+
+    <meta charset="utf-8">
+
+    <meta name="description" content="Bienvenue sur l'application de réservation de vélos de la ville de Lyon">
+    <meta name="keywords" content=" lyon, vélib, réserver vélo, transports écologiques">
+    <meta name="author" content="Camille Maillet">
+    <link rel="icon" href="img/icons/favicon.ico" />
+
+    <!--#### iOS ####-->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-title" content="LyonVélib">
+    <link rel="apple-touch-icon" href="img/icons/favicon.ico">
+
+    <!--#### Android ####-->
+    <meta name="color" content="#F5F5F4">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="application-name" content="LyonVélib">
+    <link rel="icon" type="image/png" href="REMPLIR" sizes="192x192">
+    <link rel="icon" type="image/png" href="img/icons/favicon.ico"/>
+
+    <!--#### Facebook ####-->
+    <meta property="og:locale" content="fr_FR" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="LyonVélib | Réservation de vélos" />
+    <meta property="og:description" content="Bienvenue sur l'application de réservation de vélos de la ville de Lyon (...)" />
+    <meta property="og:url" content="http://oc-projet3.camille-maillet.fr/" />
+    <meta property="og:site_name" content="LyonVélib" />
+    <meta property="og:image" content="img/preview-social.jpg" />
+    <meta property="og:image:width" content="500" />
+    <meta property="og:image:height" content="381" />
+
+    <!--#### Twitter ####-->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:description" content="Bienvenue sur l'application de réservation de vélos de la ville de Lyon (...)" />
+    <meta name="twitter:title" content="LyonVélib | Réservation de vélos" />
+    <meta name="twitter:image" content="img/preview-social.jpg" />
+
+    <!--#### Feuilles de style ####-->
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/app.css">
+    <link rel="stylesheet" href="css/slider.css">
+    <link rel="stylesheet" href="css/canvas.css">
+    <link rel="stylesheet" href="css/loader.css">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <script defer src="https://use.fontawesome.com/releases/v5.0.2/js/all.js"></script>
+
+    <title>Vélo'v | Réservations</title>
+
+  </head>
+
+
+  <body>
+
+
+
+<!--########################### TUTORIEL ####################################-->
+    <section id="tuto">
+    </section>
+
+<!--########################### APPLICATION #################################-->
+
+    <section id="app">
+
+
+      <!--##### MAP ####-->
+
+      <article id="map">
+      </article>
+
+      <!--##### DETAILS ####-->
+      <article id="details-container">
+
+        <!-- Contenu DETAILS -->
+        <div id="details">
+          <div class="details-content">
+          </div>
+        </div>
+
+        <!-- Informations BOOKING -->
+        <div id="booking">
+        </div>
+
+        <!-- Toggle MENU MOBILE -->
+        <i id="mobile-details-show" class="fa fa-chevron-up fa-sm mobile-menu-toggle"></i>
+        <i id="mobile-details-hide" class="fa fa-chevron-down fa-sm mobile-menu-toggle"></i>
+
+      </article><!-- .details-container -->
+
+      <div id="canvas-target"></div>
+
+      <div id="go-to-tutorial">
+        <p>Tutoriel</p>
+      </div>
+
+    </section><!--#app-->
+
+
+<!--############################ SCRIPTS ####################################-->
+
+    <script
+			  src="https://code.jquery.com/jquery-3.2.1.min.js"
+			  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+			  crossorigin="anonymous"></script>
+
+    <script src="js/slider.js"></script>
+    <script src="js/markerclusterer.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key="><!-- Votre clef ici --></script>
+    <script src="js/loader.js"></script>
+    <script src="js/app.js"></script>
+    <script src="js/canvas.js"></script>
+
+  </body>
+
+</html>

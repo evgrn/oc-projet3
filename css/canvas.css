@@ -1,0 +1,82 @@
+#canvas-target{
+  z-index: 100;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  background-color: rgba(80, 80, 80, 0.7);
+  display: none;
+}
+
+#canvas-container{
+  margin: 0 auto;
+  background-color: rgba( 255, 255, 255, 0.6);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  padding: 0px 20px 10px 20px;
+  text-align: center;
+}
+
+#canvas-container h2{
+  text-align: center;
+  color: dimgray;
+  font-size: 1em;
+}
+
+#canvas{
+  background-color: white;
+  cursor: url(/img/canvas/pen.png) 0 25, pointer;
+}
+
+#canvas-buttons{
+  padding: 5px;
+  text-align: left;
+}
+
+#canvas-buttons button{
+  color: white;
+  padding: 3px 10px;
+  border: none;
+  font-size: 1em;
+  cursor: pointer;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  transition: all .4s ease;
+}
+
+#canvas-buttons button:hover{
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -webkit-filter: brightness(110%);
+  filter: brightness(120%);
+}
+
+#canvas-buttons #canvas-clear{
+    background-color: rgba(250, 250, 250, 0.8);
+    color: dimgray;
+    margin-left: 6px;
+}
+
+#canvas-buttons #canvas-submit{
+  background-color: rgba(66, 183, 42, 0.8);
+  float: right;
+  display: none;
+}
+
+#canvas-buttons #canvas-close{
+  background-color: rgba(100%, 47%, 0%, 0.8);
+}
+
+
+
+/*#### MEDIA QUERIES ####*/
+
+@media screen and (min-width: 768px){
+
+  #canvas-container h2{
+    font-size: 1.5em;
+  }
+
+}

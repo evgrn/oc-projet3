@@ -1,0 +1,282 @@
+/*### SLIDER TARGET ###*/
+
+.slider-target{
+  z-index: 100;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+}
+
+
+/*### SLIDER CONTAINER ###*/
+
+.slider-container{
+  position: absolute;
+  left: 0;
+  display: flex;
+  height: 100%;
+  overflow: hidden;
+}
+
+/*### SLIDES ###*/
+
+
+.slider-slide h2{
+  font-weight: bold;
+  font-size: 2em;
+  color: white;
+  text-align: center;
+  text-shadow: 1px 1px 1px black;
+}
+
+.slider-container article{
+  background-position: center;
+  background-size: cover;
+  height: 100%;
+  overflow-y: scroll;
+}
+
+.slide-content{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap-reverse;
+  padding: 30px;
+  padding-bottom: 45px;
+}
+
+.slide-text{
+  width: 100%;
+  color: white;
+  text-shadow: 1px 1px 1px black;
+  font-style: italic;
+}
+
+.slide-img{
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+}
+
+.slide-img img{
+  width: 100%;
+  height: auto;
+  margin: 0 auto;
+}
+
+/*** SLIDER GOTOAPP ***/
+
+.slide-center{
+  height: 100%;
+  text-align: center;
+  line-height: 2em;
+  justify-content: center;
+}
+
+.slide-text-single{
+  color: dimgray;
+  text-shadow: none;
+  margin-top: -50px;
+  text-align: center;
+  font-size: 1.05em;
+}
+
+.slide-text-single.no-title{
+  margin-top: 25%;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+.go-to-app:hover{
+  color: white;
+  background-color: rgba(50, 50, 50, 0.6);
+  border: 1px solid lightgray;
+}
+
+@-webkit-keyframes goToApp-blink{
+  0%{
+    background-color: rgba(250, 250, 250, 0.8);
+    color: dimgray;
+    border: 1px solid black;
+  }
+  50%{
+    background-color: rgba(250, 250, 250, 0.8);
+    color: dimgray;
+    border: 1px solid black;
+  }
+  70%{
+    color: white;
+    background-color: rgba(50, 50, 50, 0.6);
+    border: 1px solid lightgray;
+  }
+  100%{
+    background-color: rgba(250, 250, 250, 0.8);
+    color: dimgray;
+    border: 1px solid black;
+  }
+}
+
+@keyframes goToApp-blink{
+  0%{
+    background-color: rgba(250, 250, 250, 0.8);
+    color: dimgray;
+    border: 1px solid black;
+  }
+  50%{
+    background-color: rgba(250, 250, 250, 0.8);
+    color: dimgray;
+    border: 1px solid black;
+  }
+  70%{
+    color: white;
+    background-color: rgba(50, 50, 50, 0.6);
+    border: 1px solid lightgray;
+  }
+  100%{
+    background-color: rgba(250, 250, 250, 0.8);
+    color: dimgray;
+    border: 1px solid black;
+  }
+}
+
+.go-to-app{
+  opacity: 1;
+  padding: 10px 20px;
+  font-size: 1em;
+  border-radius: 6px;
+  background-color: rgba(250, 250, 250, 0.8);
+  color: dimgray;
+  border: 1px solid black;
+  display: block;
+  margin: 10px auto;
+  transition: all .5s ease;
+  cursor: pointer;
+  animation: goToApp-blink 3s ease infinite;
+}
+
+
+/*** APPARITION CONTENU SLIDERS ***/
+
+.fadeIn{
+  opacity: 0;
+  transition: all 1s ease;
+}
+
+
+/*### COMMANDES SLIDER ###*/
+
+.slider-commands{
+  color: white;
+  z-index: 2;
+  position: absolute;
+  bottom: 0;
+  height: 50px;
+  background-color: rgba(200, 200, 200, 0.8);
+  width: 100%;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 1;
+  transition: all .5s ease;
+}
+
+.slider-commands ul{
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 90%;
+  padding: 0;
+}
+
+
+/*** COMMANDES GENERAL ***/
+
+.slider-commands ul li{
+  transition: all .5s ease;
+}
+
+.slider-commands ul li:first-child{
+  margin-left: 0;
+}
+
+/*** COMMANDES FLÈCHES ***/
+
+.slider-commands ul li.slider-arrow{
+  cursor: pointer;
+}
+
+.slider-commands ul li.slider-arrow:hover, .slider-commands ul li.slider-arrow:active{
+  color: black;
+  transform: scale(1.2);
+}
+
+
+/*** COMMANDES CERCLES ***/
+
+.slider-circle{
+  opacity: 0.3;
+  transition: all .5s ease;
+}
+
+.slider-circle-active{
+  opacity: 1;
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+}
+
+
+
+/*#### MEDIAQUERIES ####*/
+
+
+/*### SLIDER CONTAINER ###*/
+
+@media only screen and (min-width: 768px){
+
+  .slider-container h2{
+    font-size: 3rem;
+  }
+
+}
+
+
+@media only screen and (orientation: landscape){
+
+  .slide-content{
+    padding: 30px;
+  }
+
+  .slide-text{
+    width: 50%;
+    align-self: end;
+    line-height: 1.5em;
+    font-size: 1.1em;
+  }
+  .slide-text-single{
+    align-self: center;
+  }
+
+  .slide-img{
+    width: 40%;
+  }
+
+}
+
+
+/*### COMMANDES SLIDER ###*/
+
+@media only screen and (min-width: 1025px ) and (orientation: landscape){
+
+  .slider-commands{
+    opacity: 0.5;
+  }
+
+  .slider-commands:hover{
+    opacity: 1;
+  }
+
+}

@@ -1,0 +1,98 @@
+{
+  "slider0" : {
+      "title": false,
+      "text" : "<p>Bienvenue dans le tutoriel de l'application de réservation de vélos de la ville de Lyon ! <br> Pour accéder directement à l'application, cliquez sur le lien ci-dessous, sinon, <br /><strong>bon tutoriel !</strong></p>",
+      "image": false,
+      "imageAlt" : false,
+      "backgroundImg": "tuto-bg-gotoapp.jpg",
+      "goToApp": true
+  },
+  "slider1": {
+      "title": "Tutoriel",
+      "text" : "<p>Ce tutoriel prend la forme d'un <strong>diaporama</strong>. Chaque <strong>pancarte</strong> vous donnera une information sur le fonctionnement de l'application.</p><p>Sans action de votre part, les pancartes défileront automatiquement, à moins que vous utilisiez les flèches directionnelles du <strong>controlleur</strong> afin de vous déplacer dans le tutoriel.</p><p> Les pancartes cesseront alors de défiler automatiquement.</p>",
+      "image": "slider-controls.png",
+      "imageAlt" : "Présentation des boutons du tutoriel" ,
+      "backgroundImg": "tuto-bg-1.jpg",
+      "goToApp": false
+  },
+  "slider2": {
+      "title": "Fenêtre de l'application (ordinateur)",
+      "text" : "<p>Sur la version ordinateur, l'application apparaît sous la forme d'une fenêtre scindée en deux verticalement.</p><ul><li>À gauche se situe le plan de la ville</li><li>À droite se situe la fenêtre d'informations, qui contiendra les informations de la station que vous aurez sélectionnée.<br>Sur sur un bandeau au pied de cette fenêtre, vous trouverez les informations relatives à votre réservation.</li></ul>",
+      "image": "accueil.png",
+      "imageAlt" : "Fenêtre de l'application sur ordinateur",
+      "backgroundImg": "tuto-bg-2.jpg",
+      "goToApp": false
+  },
+  "slider3": {
+      "title": "Fenêtre de l'application (mobile)",
+      "text" : "<p>Sur la version mobile, le plan de la ville prend la majeure partie de l'écran, et le bandeau contenant les informations relatives à votre réservation se trouve à son pied.</p><p>Pour accéder à la fenêtre contenant les informations sur les stations, vous pouvez :</p><ul><li>Sélectionner une station sur la carte</li><li>Cliquer sur la languette au dessus du bandeau d'informations de réservation</li></ul>",
+      "image": "mobile-interface.png",
+      "imageAlt" : "Fenêtre de l'application sur mobile",
+      "backgroundImg": "tuto-bg-3.jpg",
+      "goToApp": false
+  },
+  "slider4": {
+      "title": "Regroupements de stations",
+      "text" : "<p>Lorsqu'un nombre conséquent de stations est disponible dans une zone, cet ensemble est représenté par un <strong>regroupement</strong>.</p><p>Celui-ci indique le nombre de stations qu'il contient.</p><p>Pour accéder aux stations qui s'y trouvent, il suffit de cliquer dessus.</p><p>La zone sélectionnée s'affichera alors à une échelle plus grande et vous pourrez accéder directement aux stations de vélos.</p>",
+      "image": "clusters.png",
+      "imageAlt" : "Regroupements de stations",
+      "backgroundImg": "tuto-bg-4.jpg",
+      "goToApp": false
+  },
+  "slider5": {
+      "title": "Représentation des stations",
+      "text" : "<p>Les stations sont représentées par des icônes compornant un vélo sur un disque coloré.</p><ul><li>Un vélo sur fond vert signifie que la station est en fonctionnement</li><li>Un vélo sur font rouge signifie que la station est indisponible.</li></ul><p>Pour afficher les informations d'une station, et éventuellement y réserver un vélo, il suffit de cliquer sur son icône sur le plan.</p>",
+      "image": "stations.png",
+      "imageAlt" : "Représentation des stations sur la carte",
+      "backgroundImg": "tuto-bg-5.jpg",
+      "goToApp": false
+  },
+  "slider6": {
+      "title": "Sélectionner une station (ordinateur)",
+      "text" : "<p>Sur la version ordinateur, lorsque vous sélectionnez une station, deux fenêtres éléments sont modifiés.</p><ul><li>Au dessus de la station sélectionnée, une bulle d'informations affiche son nom</li><li>La fenêtre d'informations affiche les informations concernant à la station ( nom, adresse, capacité, nombre de vélos et de stands qui y sont disponibles)</li></ul><p>En dessous de ces informations se trouve un bouton <strong>\"RÉSERVER\"</strong></p>",
+      "image": "station-selectionnee.png",
+      "imageAlt" : "Sélection d'une station",
+      "backgroundImg": "tuto-bg-6.jpg",
+      "goToApp": false
+  },
+  "slider7": {
+      "title": "Sélectionner une station (mobile)",
+      "text" : "<p>Sur mobile, lorsque vous sélectionnez une station, la fenêtre d'informations apparaît. Elle affiche tous les détails de la station ( nom, adresse, capacité, nombre de vélos et de stands disponibles)</p><p>En dessous se trouve un bouton <strong>\"RÉSERVER\"</strong></p><p>Pour accéder à nouveau à la carte, cliquez sur la languette située en haut de la fenêtre d'informations.</p><p>Au dessus de la station actuellement sélectionnée s'affichera alors une bulle d'information contenant son nom.</p>",
+      "image": "mobile-station-selectionnee.png",
+      "imageAlt" : "Illustration d'une station sélectionnée",
+      "backgroundImg": "tuto-bg-7.jpg",
+      "goToApp": false
+  },
+  "slider8": {
+      "title": "Signature",
+      "text" : "<p>Le bouton <strong>\"RÉSERVER\"</strong> cliqué,  une fenêtre vous demandera de signer pour confirmer votre réservation.</p><p>Il vous suffira alors de signer dans l'encart prévu à l'aide de votre souris sur ordinateur ou de votre doigt sur écran tactile.</p><p>Vous pourrez alors, à l'aide des boutons d'action :</p> <ul><li>Revenir à l'étape précédente <strong><it>(Retour)</it></strong></li><li>Effacer votre signature <strong><it>(Effacer)</it></strong></li><li>Valider votre réservation <strong><it>(Valider)</it></strong></li></ul>",
+      "image": "encart-signature.png",
+      "imageAlt" : "Illustration de l'encart signature",
+      "backgroundImg": "tuto-bg-8.jpg",
+      "goToApp": false
+  },
+  "slider9": {
+      "title": "Station réservée",
+      "text" : "<p>Une fois la station réservée, la fenêtre de détail affiche <strong>\"STATION RÉSERVÉE\"</strong>.</p><p>Le bandeau d'informations de réservation contient à présent toutes les informations concernant votre réservation : </p><ul><li>Le nom de la station réservée</li><li>Le temps restant avant l'annulation de la réservation</li></ul>",
+      "image": "station-reservee.png",
+      "imageAlt" : "Illustration d'une station réservée",
+      "backgroundImg": "tuto-bg-9.jpg",
+      "goToApp": false
+  },
+  "slider10": {
+      "title": "Revenir au tutoriel",
+      "text" : "<p>Vous pouvez à tout moment, depuis l'application, revenir à ce tutoriel.</p><p>Pour celà, il vous suffit de cliquer sur le bouton <strong>\"Tutoriel\"</strong> situé en haut de la fenêtre de l'application</p><p>Cela n'affectera en rien l'utilisation de l'application.</p><p>Lorsque vous retournerez dessus, vous la retrouverez exactement comme vous l'avez laissée :</p><ul><li>La fenêtre d'information affichera toujours les détails de la même station</li><li>La carte sera toujours à la même position</li><li>Si vous avez effectué une réservation, celle-ci sera toujours effective</li></ul>",
+      "image": "retour-tutoriel.png",
+      "imageAlt" : "Bouton permettant de retourner au tutoriel",
+      "backgroundImg": "tuto-bg-10.jpg",
+      "goToApp": false
+  },
+  "sliderFinal": {
+      "title": false,
+      "text" : "Vous connaissez maintenant le fonctionnement de l'application.<br>Il ne vous reste plus qu'à vous lancer ! C'est à vous !",
+      "image": false,
+      "imageAlt" : false,
+      "backgroundImg": "tuto-bg-gotoapp.jpg",
+      "goToApp": true
+  }
+}
